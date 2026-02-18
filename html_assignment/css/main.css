@@ -1,0 +1,46 @@
+body {  
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    font-size: 18px
+}
+
+header, footer {
+        background-color: aqua;
+        padding: 15px;
+    }
+
+h2 {
+    color: royalblue
+}
+
+footer p {
+color: green  
+}
+
+.site-title {
+    color:brown
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+ul.hobbies {
+    list-style-type: square;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+nav a {
+    text-decoration:none;
+     background-color: aquamarine;
+     border: 2px solid blue;
+     padding: 12px 12px;
+
+}
+nav a:hover,
+nav a:focus {
+    background-color: burlywood;
+}
