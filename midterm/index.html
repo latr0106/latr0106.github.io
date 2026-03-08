@@ -6,6 +6,7 @@
     <title>latr0106 midterm</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
+<body>
  <header class="header">
         <img src="images/butterfly.jpg" alt="Beautiful Monarch Butterfly" class="header-image">
         <h1 class="site-title">Butterfly</h1>
@@ -25,10 +26,50 @@
                 The life of a butterfly is a fascinating journey of transformation and growth. It begins as a tiny egg laid on a plant leaf. After a few days, the egg hatches and a caterpillar emerges. During this stage, the caterpillar spends most of its time eating leaves and growing quickly. As it grows, it sheds its skin several times before entering the next stage of its life. The caterpillar then forms a chrysalis, also known as a pupa. Inside this protective shell, an incredible transformation takes place. Over time, the caterpillar's body changes completely, forming wings, legs, and the delicate structure of a butterfly. When the transformation is complete, the butterfly emerges and spreads its wings for the first time. As an adult, the butterfly flies from flower to flower, feeding on nectar and helping pollinate plants. Although a butterfly's life is often short, it plays an important role in nature and represents beauty, change, and new beginnings.
             </p>
         </article>
-
-
-
-<body>
+        <section class="facts-section">
+            <h2>Facts About Butterflies</h2>
+            <ul class="facts-list">
+                <li>Butterflies go through four stages of life: egg, caterpillar (larva), chrysalis (pupa), and adult butterfly.</li>
+                <li>The transformation from a caterpillar to a butterfly is called metamorphosis.</li>
+                <li>Caterpillars spend most of their time eating leaves and growing quickly.</li>
+                <li>Butterflies help nature by pollinating flowers while feeding on nectar.</li>
+            </ul>
+        </section>
+        <section class="contact-section" id="contact">
+            <h2>Contact to learn more</h2>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" ></textarea>
+                </div>
+                <fieldset class="radio-group">
+                    <legend>Would you like to visit the butterfly?</legend>
+                    <div class="radio-options">
+                        <label for="visit-yes">Yes</label>
+                        <input type="radio" id="visit-yes" name="visit" value="yes">
+                        
+                        <label for="visit-no">No</label>
+                        <input type="radio" id="visit-no" name="visit" value="no">
+                        
+                        <label for="visit-maybe">Maybe</label>
+                        <input type="radio" id="visit-maybe" name="visit" value="maybe">
+                    </div>
+                </fieldset>
+                <button type="submit" class="submit-btn">SEND</button>    
+            </form>
+        </section>
+    <footer class="footer">
+        <p>&copy; Lone Butterfly.</p>
+    </footer>
+    </main>
     
 </body>
 </html>
