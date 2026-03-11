@@ -29,3 +29,247 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* Site title positioned on top of header image */
+.site-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/*  NAVIGATION STYLES */
+/* Navigation bar container */
+.navbar {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #56a5ff; 
+    padding: 15px 0;
+    border-bottom: 1px solid #5a5c8a;
+}
+
+/* Navigation list - horizontal layout */
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation list items with vertical dividers */
+.nav-list li {
+    padding: 0 40px;
+    border-right: 1px solid #4d138b; 
+}
+
+/* Remove border from last item */
+.nav-list li:last-child {
+    border-right: none;
+}
+
+/* Navigation links styling */
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.nav-list a:hover {
+    color: #d2691e; 
+}
+
+/*  MAIN CONTENT STYLES */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #b6bee2;
+}
+
+/*  ARTICLE STYLES  */
+/* Article section styling */
+.article {
+    margin-bottom: 30px;
+}
+
+/* Article heading styling */
+.article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Article image with text wrapping - floats left */
+.article-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* Article paragraph styling */
+.article p {
+    font-size: 0.9rem;
+    text-align: justify;
+    color: #555;
+}
+
+/* Clear float after article */
+.article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Facts section heading */
+.facts-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Facts list styling */
+.facts-list {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+/* Individual fact items */
+.facts-list li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* CONTACT FORM STYLES  */
+/* section container */
+.contact-section {
+    margin-bottom: 30px;
+}
+
+/* section heading */
+.contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Form container with border */
+.contact-form {
+    border: 1px solid #999;
+    padding: 20px;
+    background-color: #bdc6ee; 
+}
+
+/* Form group for each input field */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling for form inputs */
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Text input and email input styling */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 0.9rem;
+}
+
+/* Textarea styling */
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: vertical;
+}
+
+/* Focus state for inputs */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d2691e;
+}
+
+/*  RADIO BUTTON GROUP STYLES  */
+/* Radio button group container */
+.radio-group {
+    border: none;
+    margin-bottom: 15px;
+}
+
+/* Radio group legend/question */
+.radio-group legend {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Radio options container */
+.radio-options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Radio button labels */
+.radio-options label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-right: 5px;
+}
+
+/* Radio button inputs */
+.radio-options input[type="radio"] {
+    margin-right: 15px;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #185584;
+    border: 2px solid #071827;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: #939ab4;
+}
+
+/*  FOOTER STYLES  */
+.footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: right;
+}
+
+/* Footer text styling */
+.footer p {
+    font-size: 0.9rem;
+    color: #000000;
+}
