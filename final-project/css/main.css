@@ -194,56 +194,36 @@ p {
     padding: 0;
 }
 
-.vision-image {
+.vision-section img {
     width: 100%;
+    display: block;
 }
 
 .vision-section h2,
 .vision-section p,
 .vision-button {
-    margin-left: 1rem;
+    position: absolute;
+    left: 1rem;
+    z-index: 2;
 }
 
 .vision-section h2 {
-    margin-top: 1rem;
+    top: 1.5rem;
     font-size: 2rem;
 }
 
 .vision-section p {
+    top: 5rem;
+    right: 1rem;
     max-width: 700px;
 }
 
 .vision-button {
-    margin-bottom: 1rem;
-}
-
-/* --------- TEAM --------- */
-.team-section {
-    padding: 0 1rem;
-}
-
-.team-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.team-member {
-    background-color: #ffe6ac;
-    padding-bottom: 1rem;
-}
-
-.team-member img {
-    width: 100%;
-}
-
-.team-member h3,
-.team-member p {
-    padding: 0 1rem;
-}
-
-.team-member h3 {
-    margin-top: 1rem;
+    top: 12rem;
+    background-color: #222;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #c78c06;
 }
 
 /* --------- CONTACT --------- */
