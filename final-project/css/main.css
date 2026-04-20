@@ -1,0 +1,394 @@
+/* --------- RESET --------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --------- GENERAL --------- */
+.main-content,
+.header-container,
+.site-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* --------- HEADER --------- */
+.site-header {
+    background-color: #222;
+}
+
+.header-container {
+    padding: 1rem;
+}
+
+.logo img {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+.main-nav {
+    margin-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-item {
+    display: block;
+    padding: 1rem;
+    color: #c78c06;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+.nav-item:hover {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.search-form {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #c78c06;
+    color: #222;
+    cursor: pointer;
+}
+
+/* --------- HERO --------- */
+.hero-section {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1.5rem 1rem;
+}
+
+.hero-heading {
+    font-size: 2rem;
+}
+
+.contact-button,
+.service-button,
+.vision-button,
+.submit-button {
+    display: inline-block;
+    background-color: #c78c06;
+    color: #222;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+}
+
+/* --------- ABOUT --------- */
+.about-section {
+    background-color: #ffe6ac;
+    padding: 1rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-heading {
+    font-size: 2rem;
+}
+
+/* --------- SERVICES --------- */
+.services-section {
+    padding: 0 1rem;
+}
+
+.services-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service {
+    background-color: #ffe6ac;
+    padding-bottom: 1rem;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.service p {
+    padding: 0 1rem;
+}
+
+.service-button {
+    margin-left: 1rem;
+}
+
+/* --------- VISION --------- */
+.vision-section {
+    position: relative;
+    color: white;
+    padding: 0;
+}
+
+.vision-image {
+    width: 100%;
+}
+
+.vision-section h2,
+.vision-section p,
+.vision-button {
+    margin-left: 1rem;
+}
+
+.vision-section h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.vision-section p {
+    max-width: 700px;
+}
+
+.vision-button {
+    margin-bottom: 1rem;
+}
+
+/* --------- TEAM --------- */
+.team-section {
+    padding: 0 1rem;
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.team-member {
+    background-color: #ffe6ac;
+    padding-bottom: 1rem;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.team-member h3,
+.team-member p {
+    padding: 0 1rem;
+}
+
+.team-member h3 {
+    margin-top: 1rem;
+}
+
+/* --------- CONTACT --------- */
+.contact-section {
+    padding: 0 1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form form,
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th,
+.hours-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.hours-table th {
+    background-color: #ffe6ac;
+}
+
+.map {
+    width: 100%;
+    border: 0;
+}
+
+/* --------- FOOTER --------- */
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 1rem;
+    text-align: left;
+}
+
+/* --------- TABLET / DESKTOP --------- */
+@media (min-width: 760px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .logo img {
+        margin-bottom: 0;
+    }
+
+    .main-nav {
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav-item {
+        border-bottom: none;
+        padding: 0.8rem 1rem;
+    }
+
+    .search-form {
+        width: 220px;
+    }
+
+    .hero-section {
+        position: relative;
+    }
+
+    .hero-content {
+        position: absolute;
+        left: 5%;
+        bottom: 10%;
+        max-width: 600px;
+    }
+
+    .about-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: stretch;
+    }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service:last-child {
+        grid-column: span 2;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .hours-wrapper {
+        grid-column: 1 / 2;
+    }
+
+    .location-wrapper {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service:last-child {
+        grid-column: auto;
+    }
+}
